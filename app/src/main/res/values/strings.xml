@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MilitaryPT</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="begin_exam">Begin Exam</string>
+    <string name="under_30">Under 30</string>
+    <string name="select_branch">Select Branch</string>
+    <string name="_40_49">40-49</string>
+    <string name="_50_and_above">50 and Above</string>
+    <string name="airforce">Airforce</string>
+    <string name="army">Army</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="marines">Marines</string>
+    <string name="navy">Navy</string>
+    <string name="select_age_group">Select Age Group</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="settingTitle">Settings</string>
+    <string name="intro">Welcome to the PT APP </string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/pushSave"
+        style="@style/ButtonStyling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pushInput"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Save"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/pushStart"
+        style="@style/ButtonStyling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pushTime"
+        android:text="Start Timer"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/pushTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="Time: 15"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/pushInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Repitions"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/pushStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

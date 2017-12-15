@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/afTipss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyling"
+        android:layout_below="@+id/tipsIntro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Air Force"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/armyTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyling"
+        android:layout_alignEnd="@+id/afTipss"
+        android:layout_alignRight="@+id/afTipss"
+        android:layout_below="@+id/afTipss"
+        android:text="Army"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/navyTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyling"
+        android:layout_alignLeft="@+id/armyTips"
+        android:layout_alignStart="@+id/armyTips"
+        android:layout_below="@+id/armyTips"
+        android:text="Navy"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/marinePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyling"
+        android:layout_alignLeft="@+id/navyTips"
+        android:layout_alignStart="@+id/navyTips"
+        android:layout_below="@+id/navyTips"
+        android:text="Marines"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tipsIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marinePage"
+
+        />
+
+    <TextView
+        android:id="@+id/developerTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal" />
+
+    <TextView
+        android:id="@+id/devTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal"
+         />
+
+    <Button
+        android:id="@+id/tipsReturn"
+        style="@style/ButtonStyling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developerTips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Return to Main" />
+
+</RelativeLayout>

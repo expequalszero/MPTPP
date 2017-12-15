@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/runMinIn"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Min"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/runSecIn"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sec"
+        android:maxLength="2"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/runMinIn"
+        android:layout_toEndOf="@+id/runMinIn" />
+
+    <Button
+        android:id="@+id/saveEnterRun"
+        style="@style/ButtonStyling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:layout_below="@+id/runMinIn"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.militarypt.militarypt.Settings">
+
+
+    <TextView
+        android:id="@+id/branchTEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="25dp"
+        android:text="@string/select_branch"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/ageTEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ageGroup"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/genderTEXT"
+        android:layout_toStartOf="@+id/genderTEXT"
+        android:text="@string/select_age_group"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+
+    <TextView
+        android:id="@+id/genderTEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ageTEXT"
+        android:layout_alignBottom="@+id/ageTEXT"
+        android:layout_alignParentEnd="true"
+        android:text="@string/select_gender"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/settingTitle"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/saveSettings"
+        style="@style/ButtonStyling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="28dp"
+        android:text="Save"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/branGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/branchTEXT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/afBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="InfoSelect"
+            android:text="@string/airforce"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/armyBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navyBut"
+            android:onClick="InfoSelect"
+            android:text="@string/army"
+            android:textColor="@color/white"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:id="@+id/marinesBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/armyBut"
+            android:layout_centerVertical="true"
+            android:onClick="InfoSelect"
+            android:text="@string/navy"
+            android:textColor="@color/white"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:id="@+id/navyBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/afBut"
+            android:layout_below="@+id/marinesBut"
+            android:onClick="InfoSelect"
+            android:text="@string/marines"
+            android:textColor="@color/white"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageGroup"
+        android:layout_below="@+id/branchTEXT"
+        android:layout_alignLeft="@+id/ageTEXT"
+        android:layout_alignStart="@+id/ageTEXT">
+
+        <RadioButton
+            android:id="@+id/under30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/branchTEXT"
+            android:onClick="InfoSelect"
+            android:text="@string/under_30"
+            android:textColor="@color/white"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:id="@+id/age30_39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/under30"
+            android:layout_centerHorizontal="true"
+            android:onClick="InfoSelect"
+            android:text="30_39"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:id="@+id/age40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/age30_39"
+            android:layout_below="@+id/age30_39"
+            android:onClick="InfoSelect"
+            android:text="@string/_40_49"
+            android:textColor="@color/white"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:id="@+id/age50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age40"
+            android:layout_centerHorizontal="true"
+            android:onClick="InfoSelect"
+            android:text="@string/_50_and_above"
+            android:textColor="@color/white"
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/genGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderTEXT"
+        android:layout_alignStart="@+id/genderTEXT">
+
+        <RadioButton
+            android:id="@+id/genM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/saveSettings"
+            android:layout_below="@+id/genderTEXT"
+            android:onClick="InfoSelect"
+            android:text="@string/male"
+            android:textColor="@color/white"
+            tools:ignore="ObsoleteLayoutParam" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/settingsReturn"
+        style="@style/ButtonStyling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/saveSettings"
+        android:text="Return to Main Menu"
+        android:textColor="@color/black" />
+
+    <RadioButton
+        android:id="@+id/genF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saveSettings"
+        android:layout_alignStart="@+id/saveSettings"
+        android:layout_below="@+id/genGroup"
+        android:onClick="InfoSelect"
+        android:text="@string/female"
+        android:textColor="@color/white"
+        tools:ignore="ObsoleteLayoutParam" />
+
+
+</RelativeLayout>

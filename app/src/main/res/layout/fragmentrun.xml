@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/enterTime"
+        style="@style/ButtonStyling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:text="Enter Time"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignTop="@+id/enterTime"
+        android:layout_centerHorizontal="true"
+
+        android:text="---OR---"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        tools:text="---OR---" />
+
+    <Button
+        android:id="@+id/usingTimer"
+        style="@style/ButtonStyling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterTime"
+        android:layout_centerHorizontal="true"
+
+        android:text="Use Timer"
+        android:textColor="@color/black" />
+
+</LinearLayout>
